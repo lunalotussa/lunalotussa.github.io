@@ -1,0 +1,147 @@
+{
+  "kontak": [
+    {
+      "id": 1,
+      "firstName": "Roosevelt",
+      "lastName": "Theo",
+      "phone": "9744445555"
+    },
+    {
+      "id": 2,
+      "firstName": "Lincoln",
+      "lastName": "Abe",
+      "phone": "977772222"
+    },
+    {
+      "id": 3,
+      "firstName": "Tesla",
+      "lastName": "Nico",
+      "phone": "9799991111"
+    },
+    {
+      "id": 4,
+      "firstName": "Soedirman",
+      "lastName": "Jenderal",
+      "phone": "9762621717"
+    },
+    {
+      "id": 5,
+      "firstName": "Luna",
+      "lastName": "Test db.json",
+      "phone": "9762621717"
+    },
+    {
+      "firstName": "Lotussa",
+      "lastName": "Victoria",
+      "phone": "08779833",
+      "id": 6
+    },
+    {
+      "firstName": "Benedictus",
+      "lastName": "Gagana",
+      "phone": "12345678",
+      "id": 7
+    }
+  ],
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "phone": "25565115"
+    },
+    {
+      "id": 2,
+      "name": "Spiderman",
+      "phone": "25565115"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "phone": "25565115"
+    },
+    {
+      "id": 4,
+      "name": "Venom",
+      "phone": "25565115"
+    },
+    {
+      "id": 5,
+      "name": "Black Phanter",
+      "phone": "25565115"
+    },
+    {
+      "id": 6,
+      "name": "Dog",
+      "phone": "25565115"
+    },
+    {
+      "id": 7,
+      "name": "Chicken",
+      "phone": "25565115"
+    },
+    {
+      "id": 8,
+      "name": "Batman Zero Waw",
+      "phone": "1234567"
+    },
+    {
+      "name": "Joker",
+      "phone": "1234567",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "name": "Flazz",
+      "phone": "12345"
+    },
+    {
+      "name": "bubu",
+      "phone": "23466",
+      "id": 11
+    }
+  ],
+  "freelance": [
+    {
+      "id": 1,
+      "name": "Murphy",
+      "phone": "25565115",
+      "skill": "Angular Developer",
+      "notes": "he has quality to build angular application"
+    },
+    {
+      "id": 2,
+      "name": "Eddie",
+      "phone": "25565115",
+      "skill": "Devops Engineer",
+      "notes": "he has quality to maintain production environment"
+    },
+    {
+      "id": 3,
+      "name": "Ruud van",
+      "phone": "25565115",
+      "skill": "UX Designer",
+      "notes": "he has quality to create excelent UX"
+    },
+    {
+      "id": 4,
+      "name": "Eusebio",
+      "phone": "25565115",
+      "skill": "Angular Developer",
+      "notes": "he has quality to build angular application"
+    },
+    {
+      "id": 5,
+      "name": "Venom",
+      "phone": "25565115",
+      "skill": "Java Developer",
+      "notes": "he has quality to build java application"
+    },
+    {
+      "id": 6,
+      "name": "Richard",
+      "phone": "25565115",
+      "skill": "React Developer",
+      "notes": "he has quality to build react application"
+    }
+  ]
+}

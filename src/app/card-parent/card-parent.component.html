@@ -1,0 +1,52 @@
+<div class="container">
+  <div [hidden]="submitted">
+    <h1>Contact Form</h1>
+    <p>Jumlah Kontak : {{contacts.length}}</p>
+    <button type="button" (click)="goBack()">Back to dashboard</button> 
+
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+      <div class="form-group">
+        <label>FirstName</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="modelKontak.firstName" name="firstName" #name="ngModel"/>
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            First Name is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label>FirstName</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="modelKontak.lastName" name="lastName" #name="ngModel"/>
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            Last Name is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="text" maxlength="8" (keypress)="validateNo($event)" class="form-control" id="phone" required [(ngModel)]="modelKontak.phone" name="phone" #phone="ngModel"/>
+        <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">
+          Phone is required
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">
+        Submit
+      </button>
+    </form>
+  </div>
+  <div [hidden]="!submitted">
+    <h2>Berikut adalah data yang sudah anda kirim</h2>
+    <div class="row">
+      <div class="col-xs-3">First Name</div>
+      <div class="col-xs-9">{{modelKontak.firstName}}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">Last Name</div>
+        <div class="col-xs-9">{{modelKontak.lastName}}</div>
+      </div>
+    <div class="row">
+      <div class="col-xs-3">Phone</div>
+      <div class="col-xs-9">{{modelKontak.phone}}</div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-secondary" (click)="submitted=false">Back</button>
+  </div><br>
+  <app-card-child *ngFor="let kontak of contacts" [kontak]="kontak"></app-card-child>
+</div>

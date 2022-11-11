@@ -1,0 +1,8 @@
+<div id="header">{{kontak.firstName | uppercase}} CONTACT</div>
+<div id="body">
+    Phone Number : {{kontak.phone | phone}}<br>
+    Detail Name : {{kontak.firstName}} , {{kontak.lastName}}<br>
+    <!-- <button class="btn" (click)="addNewKontak(kontak)">Add Kontak</button> -->
+    <a routerLink="/detail-contact/{{kontak.id}}"><button class="btn" >Klik Detail Kontak</button></a>
+</div>
+<br>

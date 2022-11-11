@@ -1,0 +1,28 @@
+<div class="card">
+    <img src="https://divedigital.id/wp-content/uploads/2022/07/12a-1.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>{{freelance.name | uppercase}}</b></h4> 
+     <table>
+        <tr>
+            <td>Phone</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>{{freelance.phone | phone}}</td>
+        </tr>
+        <tr>
+            <td>Skill</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>{{freelance.skill}}</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>{{freelance.notes}}</td>
+        </tr>
+        <tr>
+            <td><a routerLink="/detail-freelancer/{{freelance.id}}"><button class="btn btn-info" >Detail</button></a>&nbsp;</td>
+            <td><a routerLink="/detail-freelance/{{freelance.id}}"><button class="btn btn-warning" >Edit</button></a>&nbsp;</td>
+            <td><a routerLink="/detail-freelance/{{freelance.id}}"><button class="btn btn-danger" >Delete</button></a>&nbsp;</td>
+        </tr>
+     </table>
+    </div>
+  </div><br>

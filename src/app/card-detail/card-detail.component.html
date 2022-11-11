@@ -1,0 +1,10 @@
+<div *ngIf="contact; else second">
+    <div id="header">{{contact.firstName | uppercase}} CONTACT</div>
+        <div id="body">
+        Phone Number : {{contact.phone | phone}}<br>
+        Detail Name : {{contact.firstName}} , {{contact.lastName}}<br>
+        <!-- <button class="btn" (click)="addNewKontak(kontak)">Add Kontak</button> -->
+        </div><br>
+    <button type="button" (click)="goBack()">Back to Previous Page</button>
+  </div>
+  <ng-template #second>Data kosong</ng-template>

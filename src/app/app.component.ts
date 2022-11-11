@@ -1,5 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Pipe } from '@angular/core';
 
+@Pipe({
+  name : "phone"
+})
+export class PhonePipe {
+  //Sudah diperbaiki, tipe datanya tadi yang salah
+  transform(rawNum: any): string {
+    rawNum = rawNum.charAt(0) != 0 ? "0" + rawNum : "" + rawNum;
+
+    let newStr = "";
+    let i = 0;
+
+    for (; i < Math.floor(rawNum.length / 2) - 1; i++) {
+      newStr = newStr + rawNum.substr(i * 2, 2) + "-";
+    }
+
+    return newStr + rawNum.substr(i * 2);
+  }
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +25,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app1';
+  name ='Luna';
 }
