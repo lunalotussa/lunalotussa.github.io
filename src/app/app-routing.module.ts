@@ -9,6 +9,7 @@ import { CardParentComponent } from './card-parent/card-parent.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
 import { FreelanceDetailComponent } from './freelance-detail/freelance-detail.component';
 import { FreelanceParentComponent } from './freelance-parent/freelance-parent.component';
+import { FreelanceEditComponent } from './freelance-edit/freelance-edit.component';
 
 const routes: Routes =[
   {path: "heroes",component:HeroParentComponent},
@@ -21,7 +22,8 @@ const routes: Routes =[
   {path: "contacts/:id",component:CardDetailComponent},
   {path: 'detail-freelancer/:id',component:FreelanceDetailComponent},
   {path: "freelancer",component:FreelanceParentComponent},
-  {path: "freelancer/:id",component:FreelanceDetailComponent}
+  {path: "freelancer/:id",component:FreelanceDetailComponent},
+  {path: 'edit-freelancer/:id',component:FreelanceEditComponent}
 ]
 
 @NgModule({

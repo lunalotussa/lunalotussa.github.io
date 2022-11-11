@@ -103,14 +103,14 @@
   "freelance": [
     {
       "id": 1,
-      "name": "Murphy",
+      "name": "Murphy1",
       "phone": "25565115",
-      "skill": "Angular Developer",
-      "notes": "he has quality to build angular application"
+      "skill": "Angular Developer1",
+      "notes": "he has quality to build angular application1"
     },
     {
       "id": 2,
-      "name": "Eddie",
+      "name": "Eddie Chung",
       "phone": "25565115",
       "skill": "Devops Engineer",
       "notes": "he has quality to maintain production environment"
@@ -137,11 +137,18 @@
       "notes": "he has quality to build java application"
     },
     {
-      "id": 6,
-      "name": "Richard",
+      "name": "Richardo",
       "phone": "25565115",
       "skill": "React Developer",
-      "notes": "he has quality to build react application"
+      "notes": "he has quality to build react application",
+      "id": 6
+    },
+    {
+      "name": "Mey",
+      "phone": "12341234",
+      "skill": "Gardening",
+      "notes": "Flower blossom",
+      "id": 7
     }
   ]
 }

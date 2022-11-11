@@ -20,8 +20,8 @@
         </tr>
         <tr>
             <td><a routerLink="/detail-freelancer/{{freelance.id}}"><button class="btn btn-info" >Detail</button></a>&nbsp;</td>
-            <td><a routerLink="/detail-freelance/{{freelance.id}}"><button class="btn btn-warning" >Edit</button></a>&nbsp;</td>
-            <td><a routerLink="/detail-freelance/{{freelance.id}}"><button class="btn btn-danger" >Delete</button></a>&nbsp;</td>
+            <td><button class="btn btn-warning" (click)="sendEdit(freelance.id)">Edit</button>&nbsp;</td>
+            <td><button class="btn btn-danger" (click)="sendDelete(freelance.id)">Delete</button></td>
         </tr>
      </table>
     </div>

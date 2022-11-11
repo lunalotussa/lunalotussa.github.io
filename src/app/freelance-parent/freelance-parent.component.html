@@ -4,14 +4,13 @@
       <p>Jumlah Freelancer : {{freelancer.length}}</p>
       <table>
         <tr>
-          <td><input type="text" class="form-control" id="name" required [(ngModel)]="modelFreelance.name" name="Name" #name="ngModel" placeholder="Search by Name"/></td>
+          <td><input type="text" [(ngModel)]="searchName" name="search" #name="ngModel" class="form-control" id="search" required placeholder="Search by Name"/></td>
           <td>&nbsp;</td>
-          <td><button type="submit" class="btn btn-success">Search</button>&nbsp;</td>
+          <td><button type="submit" (click)="search()" class="btn btn-success">Search</button>&nbsp;</td>
           <td><button type="button" (click)="goBack()" class="btn btn-info">Back to Dashboard</button> </td>
         </tr>
       </table>
-    
-  
+      
       <form (ngSubmit)="onSubmit()" #freelanceForm="ngForm">
         <div class="form-group">
           <label>Name</label>

@@ -19,6 +19,7 @@ import { CardDetailComponent } from './card-detail/card-detail.component';
 import { FreelanceParentComponent } from './freelance-parent/freelance-parent.component';
 import { FreelanceChildComponent } from './freelance-child/freelance-child.component';
 import { FreelanceDetailComponent } from './freelance-detail/freelance-detail.component';
+import { FreelanceEditComponent } from './freelance-edit/freelance-edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { FreelanceDetailComponent } from './freelance-detail/freelance-detail.co
     CardDetailComponent,
     FreelanceParentComponent,
     FreelanceChildComponent,
-    FreelanceDetailComponent
+    FreelanceDetailComponent,
+    FreelanceEditComponent
   ],
   imports: [
     BrowserModule,

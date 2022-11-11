@@ -1,0 +1,61 @@
+<div class="container">
+    <div [hidden]="submitted">
+      <h1>Freelancer Edit</h1>
+      <button type="button" (click)="goBack()" class="btn btn-info">Back to Dashboard</button>
+      <form (ngSubmit)="onSubmit()" #freelanceForm="ngForm">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" id="name" required [(ngModel)]="freelancer.name" name="Name" #name="ngModel" placeholder="Insert Your Name"/>
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+              Name is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="text" maxlength="8" (keypress)="validateNo($event)" class="form-control" id="phone" required [(ngModel)]="freelancer.phone" name="phone" #phone="ngModel" placeholder="Insert Your Phone"/>
+          <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">
+            Phone is required
+          </div>
+        </div>
+        <div class="form-group">
+            <label>Skill</label>
+            <input type="text" class="form-control" id="skill" required [(ngModel)]="freelancer.skill" name="Skill" #skill="ngModel" placeholder="Insert Your Skill"/>
+            <div [hidden]="skill.valid || skill.pristine" class="alert alert-danger">
+                Skill is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Notes</label>
+            <input type="text" class="form-control" id="notes" required [(ngModel)]="freelancer.notes" name="Notes" #notes="ngModel" placeholder="Insert Your Notes"/>
+            <div [hidden]="notes.valid || notes.pristine" class="alert alert-danger">
+                Notes is required
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="!freelanceForm.form.valid">
+          Submit
+        </button>
+      </form>
+    </div>
+    <div [hidden]="!submitted">
+      <h2>Berikut adalah data yang sudah anda edit</h2>
+      <div class="row">
+        <div class="col-xs-3">Name</div>
+        <div class="col-xs-9">{{freelancer.name}}</div>
+      </div>
+      <div class="row">
+          <div class="col-xs-3">Phone</div>
+          <div class="col-xs-9">{{freelancer.phone}}</div>
+        </div>
+      <div class="row">
+        <div class="col-xs-3">Skill</div>
+        <div class="col-xs-9">{{freelancer.skill}}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">Notes</div>
+        <div class="col-xs-9">{{freelancer.notes}}</div>
+      </div>
+      <br>
+      <button type="button" class="btn btn-secondary" (click)="submitted=false">Back</button>
+    </div><br>
+  </div>
+  
